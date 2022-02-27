@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.nav {
+  background-color: rgb(157, 157, 189);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.nav li {
+  font-size: 1.75em;
+  padding: 5px;
+  transition-duration: 0.1s;
+  transition-property: transform;
+}
+.nav li:hover {
+  text-decoration: underline 1px;
+  cursor: pointer;
+  color: blue;
+  transform: translateY(-2px);
+}
+.slider {
+  position: fixed;
+  top: 80px;
+  left: 0px;
+  width: 150px;
+  height: calc(100% - 80px);
+  background-color: rgba(128, 128, 128, 0.336);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+.slider a:hover {
+  background-color: gray;
+}
+.page {
+  margin-top: 90px;
+  margin-left: 160px;
+  margin-right: 10px;
+}
+.card {
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 400px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px 0px 10px gray;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+.card:hover {
+  box-shadow: 2px 2px 10px gray;
+  transform: translate(3px, -3px);
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card > .title {
+  margin: 20px 10px;
+  font-size: 1.5em;
+}
+.dis {
+  margin: 0px 10px;
+  max-height: 100px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.read-more {
+  color: blue;
+  padding: 15px 10px 20px 10px;
+  margin-top: 20px;
+  font-size: 1.3em;
+  border-top: 1px solid;
+  position: relative;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.read-more::after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  border-top: 10px solid rgb(255, 30, 0);
+  border-right: 10px solid rgb(9, 255, 0);
+  border-bottom: 10px solid rgb(23, 144, 153);
+  border-left: 10px solid blue;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  gap: 20px;
+  justify-content: space-around;
+}
