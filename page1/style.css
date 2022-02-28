@@ -147,6 +147,10 @@
   text-transform: capitalize;
   cursor: pointer;
 }
+.read-more a{
+  text-decoration: none;
+}
+
 .read-more::after {
   content: "";
   position: absolute;
