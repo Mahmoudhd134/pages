@@ -78,6 +78,19 @@
   margin-left: 160px;
   margin-right: 10px;
 }
+@media(max-width: 450px){
+  .slider{
+    display: none;
+  }
+  .page{
+    margin-top: 50px;
+    margin-left: 10px;
+  }
+  .nav{
+    font-size: .7em;
+    height: 40px;
+  }
+}
 .background {
   background-color: lightgray;
   border-radius: 20px;
