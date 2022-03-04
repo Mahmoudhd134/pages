@@ -44,7 +44,7 @@
   left: 0px;
   width: 150px;
   height: calc(100% - 60px);
-  background-color: rgba(128, 128, 128, 0.336);
+  background-color: rgb(163, 163, 163);
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;
@@ -83,7 +83,11 @@
 }
 @media (max-width: 450px) {
   .slider {
-    display: none;
+    width: 100%;
+    top: 80%;
+    height: 20%;
+    background-color: rgb(163, 163, 163);
+    z-index: 5;
   }
   .page {
     margin-top: 50px;
